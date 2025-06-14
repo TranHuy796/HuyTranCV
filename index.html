@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Alex Carter - Web Developer & Designer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+      <div class="container1">
+        <a href="" class="logo">Tran Huy</a>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container1">
+        <div class="hero-content">
+          <h1 class="hero-title animate__fadeInUp">Tran Gia Huy</h1>
+          <h2 class="hero-subtitle animate__fadeInUp animate__delay-1">
+            Web Developer & UI/UX Designer
+          </h2>
+          <p class="hero-text animate__fadeInUp animate__delay-2">
+            I create beautiful, functional websites that deliver results.
+          </p>
+          <div class="hero-buttons animate__fadeInUp animate__delay-3">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-image animate__fadeIn animate__delay-4">
+          <img
+            src="images/main.jpg"
+            alt="Tran Gia Huy"
+            class="profile-image lazy-load"
+            data-src="images/main.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="./images/main.jpg"
+              alt="About Huy"
+              class="about-img profile-image lazy-load"
+            />
+            <div class="about-badge">
+              <div class="badge-content">
+                <span class="badge-number">2+</span>
+                <span class="badge-text">Years Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-info">
+            <h3 class="about-title">Who am I?</h3>
+            <p class="about-text">
+              I'm Huy Tran, a passionate web developer and UI/UX designer with
+              over 2 years of professional experience creating digital
+              experiences that matter.
+            </p>
+
+            <div class="about-tabs">
+              <button
+                type="button"
+                class="tab-btn active"
+                data-target="#skills"
+              >
+                Skills
+              </button>
+              <button type="button" class="tab-btn" data-target="#experience">
+                Experience
+              </button>
+              <button type="button" class="tab-btn" data-target="#education">
+                Education
+              </button>
+            </div>
+
+            <div class="tab-content active" id="skills">
+              <div class="skills-container">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-line" data-width="95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-line" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-line" data-width="80"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">UI/UX Design</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-line" data-width="90"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <!-- Experience content would go here -->
+              <h3 class="about-title">Creating a novel Website</h3>
+              <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img">
+              <img src="./images/novelweb.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> Novel Website</h3>
+                  <p>Web Design</p>
+                  <a
+                    target="_blank"
+                    href="https://loser-huhu.github.io/webtruyenlo//"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+              <p class="about-text about-text-ex ">
+                I am currently working on creating a novel website that aims to bring fresh ideas and interactive features to users. 
+                This project is a combination of creativity and technology, designed to deliver a unique and engaging online experience. 
+                Stay tuned for more updates as I continue to build and refine this platform.
+</p>
+              </p>
+            </div>
+
+            <div class="tab-content" id="education">  
+              <!-- Education content would go here -->
+                        <h3 class="about-title">Ho Chi Minh City University of Transport (UTH)</h3>
+              <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img">
+              <img src="./images/uth.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3> Website UTH</h3>
+                  <p>Web UTH</p>
+                  <a
+                    target="_blank"
+                    href="https://giaothongvantaitphcm.edu.vn/"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+              <p class="about-text about-text-ex ">
+                <span class="span-edu">Bachelor of Information Technology</span> <br>
+<span class="span-edu">Expected Graduation: April 2027</span> <br>
+
+Relevant coursework: Web Programming, Database Management, Data Structures and Algorithms, Computer Networks <br>
+
+<span class="span-edu">GPA: 3.6 / 4.0</span> <br>
+
+<span class="span-edu">Activities & Achievements:</span> <br>
+Member, UTH IT Club (since 2023)
+Competitor, Vietnam National Hackathon on Technology & Transportation (2024)
+Volunteer Tutor, “Basic Web Development Workshop” for first-year students (2023)
+</p>
+              </p>
+
+            </div>
+
+            <a href="#" class="btn btn-primary download-cv" id="download-pdf">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span>Services</span></h2>
+          <p class="section-subtitle">What I offer</p>
+        </div>
+        <div class="services-container">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-text">
+              Custom website development tailored to your business needs with
+              clean, efficient code.
+            </p>
+            <div class="service-hover">
+              <h4>Web Development</h4>
+              <ul>
+                <li>Responsive Design</li>
+                <li>Performance Optimization</li>
+                <li>SEO Friendly</li>
+                <li>Cross-browser Compatibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-text">
+              Beautiful, intuitive interfaces designed to enhance user
+              experience and engagement.
+            </p>
+            <div class="service-hover">
+              <h4>UI/UX Design</h4>
+              <ul>
+                <li>User Research</li>
+                <li>Wireframing & Prototyping</li>
+                <li>Interaction Design</li>
+                <li>Usability Testing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="service-title">Mobile Apps</h3>
+            <p class="service-text">
+              Native and hybrid mobile applications for iOS and Android
+              platforms.
+            </p>
+            <div class="service-hover">
+              <h4>Mobile Apps</h4>
+              <ul>
+                <li>React Native Development</li>
+                <li>iOS & Android</li>
+                <li>App Store Optimization</li>
+                <li>Push Notifications</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="service-title">SEO Optimization</h3>
+            <p class="service-text">
+              Improve your search engine rankings and drive more organic traffic
+              to your site.
+            </p>
+            <div class="service-hover">
+              <h4>SEO Optimization</h4>
+              <ul>
+                <li>Keyword Research</li>
+                <li>On-page SEO</li>
+                <li>Technical SEO</li>
+                <li>Content Strategy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span>Portfolio</span></h2>
+          <p class="section-subtitle">Recent projects</p>
+        </div>
+
+        <div class="portfolio-filter">
+          <button type="button" class="filter-btn active" data-filter="all">
+            All
+          </button>
+          <button type="button" class="filter-btn" data-filter="web">
+            Web Design
+          </button>
+          <button type="button" class="filter-btn" data-filter="app">
+            Mobile App
+          </button>
+          <button type="button" class="filter-btn" data-filter="branding">
+            Branding
+          </button>
+        </div>
+
+        <div class="portfolio-container">
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img">
+              <img src="./images/pic1.png" alt="Project 1" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>E-commerce Website</h3>
+                  <p>Web Design</p>
+                  <a
+                    target="_blank"
+                    href="https://codewithsadee.github.io/anon-ecommerce-website/"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-img">
+              <img src="images/pic2.png" alt="Project 2" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Fitness App</h3>
+                  <p>Mobile App</p>
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.gen.workoutme&hl=vi"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="branding">
+            <div class="portfolio-img">
+              <img src="./images/pic3.png" alt="Project 3" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Brand Identity</h3>
+                  <p>Branding</p>
+                  <a
+                    target="_blank"
+                    href="https://www.figma.com/design/WTQSDkScXB0fXgX7ft52Ek/Minimal-Brand-Identity-Guidelines---Brand-Identity-and-Marketing---Design-Principles--Community-?node-id=0-409&p=f&m=draw"
+                    class="portfolio-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More portfolio items would go here -->
+        </div>
+
+        <!-- <div class="portfolio-more">
+          <a
+            target="_blank"
+            href="https://codewithsadee.github.io/anon-ecommerce-website/"
+            class="btn btn-primary"
+            >View All Projects</a
+          >
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Client <span>Testimonials</span></h2>
+          <p class="section-subtitle">What clients say about me</p>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Huy Tran delivered an outstanding website for our company. His
+                attention to detail and creative approach resulted in a site
+                that perfectly represents our brand.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/avt1.jpg" alt="Client" class="author-img" />
+              <div class="author-info">
+                <h4 class="author-name">Sarah Johnson</h4>
+                <p class="author-position">Marketing Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Working with Huy Tran was a pleasure. He understood our vision
+                and translated it into a beautiful, functional mobile app that
+                our users love. Wish your projects great.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/avt2.png" alt="Client" class="author-img" />
+              <div class="author-info">
+                <h4 class="author-name">Michael Chen</h4>
+                <p class="author-position">CEO, StartupX</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- More testimonials would go here -->
+           <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Working with Huy Tran was a fantastic experience.
+                 He captured our ideas perfectly and developed a sleek, efficient website that exceeded expectations.
+                
+                
+                 
+
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/sopihanguyen.pnj.jpg" alt="Client" class="author-img">
+              <div class="author-info">
+                <h4 class="author-name"> Sophia Nguyen</h4>
+                <p class="author-position">Co-Founder, CreativeCore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In <span>Touch</span></h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Email</h3>
+               <a href="mailto:tghuy796@gmail.com" class="contact-text">tghuy796@gmail.com</a>
+
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Phone</h3>
+               <a href="tel:0961776733" class="contact-text">0961776733</a>
+
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Location</h3>
+                <p class="contact-text">Ninh Hoa, Khanh Hoa</p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a
+                target="_blank"
+                href="https://x.com/giahuytran731"
+                class="social-link"
+                ><i class="fa-solid fa-x"></i> ></a
+              >
+              <a
+                target="_blank"
+                href="https://www.instagram.com/huytg796/"
+                class="social-link"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/tghuy796@gmail.com"
+            method="POST"
+          >
+            <!-- Thêm input ẩn cho reply-to -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourwebsite.com/thank-you.html"
+            />
+            <!-- Trang cảm ơn -->
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Tắt captcha -->
+
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="_subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <a href="#" class="footer-logo">TH</a>
+            <p class="footer-text">
+              Creating digital experiences that inspire and deliver results.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h3 class="footer-title">Services</h3>
+            <ul class="footer-list">
+              <li><a target="_blank" href="https://codewithsadee.github.io/anon-ecommerce-website/">Web Development</a></li>
+              <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.gen.workoutme&hl=vi">UI/UX Design</a></li>
+              <li><a target="_blank" href="https://www.figma.com/design/WTQSDkScXB0fXgX7ft52Ek/Minimal-Brand-Identity-Guidelines---Brand-Identity-and-Marketing---Design-Principles--Community-?node-id=0-409&m=draw">Mobile Apps</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3 class="footer-title">Newsletter</h3>
+            <p class="footer-text">
+              Subscribe to get updates on my latest work.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; <span id="year"></span> Huy Tran. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a  class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <script src="js/main.js"></script>
+    <!-- tải pdf -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  document.getElementById('download-pdf').addEventListener('click', function (e) {
+    e.preventDefault(); // Ngăn trình duyệt tải lại trang
+
+    // Chọn phần tử cần in PDF (ở đây là toàn bộ body)
+    const element = document.body;
+
+    // Cấu hình xuất PDF
+    const opt = {
+      margin:       0.5,
+      filename:     'my-website.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    // Tạo và tải PDF
+    html2pdf().set(opt).from(element).save();
+  });
+</script>
+
+  </body>
+</html>
